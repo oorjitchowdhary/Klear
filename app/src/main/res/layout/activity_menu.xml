@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuActivity"
-    android:background="@drawable/menuBg">
+    android:background="@drawable/menubg">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -15,15 +15,16 @@
         android:layout_marginTop="50dp"/>
 
     <Button
+        android:id="@+id/pickup"
         android:layout_marginTop="250dp"
-    android:layout_width="200dp"
-    android:layout_height="140dp"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
         android:background="#e91e63"
         android:text="Pickup"
         android:textSize="22sp"
-        android:textColor="#fff"
-        />
+        android:textColor="#fff" />
     <Button
+        android:id="@+id/classify"
         android:layout_marginTop="250dp"
         android:layout_width="200dp"
         android:layout_height="140dp"
@@ -34,6 +35,7 @@
         android:layout_alignParentRight="true"
         />
     <Button
+        android:id="@+id/donate"
         android:layout_marginTop="410dp"
         android:layout_width="200dp"
         android:layout_height="140dp"
@@ -44,6 +46,7 @@
         android:layout_alignParentRight="true"
         />
     <Button
+        android:id="@+id/diy"
         android:layout_marginTop="410dp"
         android:layout_width="200dp"
         android:layout_height="140dp"

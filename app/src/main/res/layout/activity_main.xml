@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/mianBg">
+    android:background="@drawable/mainbg">
 
     <TextView
         android:id="@+id/textView"
@@ -16,7 +16,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:fontFamily="sans-serif"
-        android:text="KLEAR."
+        android:text="Klear"
         android:textColor="#fff"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"

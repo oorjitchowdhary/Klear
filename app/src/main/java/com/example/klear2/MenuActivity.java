@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity {
     Button camera;
+    Button diy;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +26,14 @@ public class MenuActivity extends AppCompatActivity {
                 catch (Exception e) {
                     e.printStackTrace();
                 }
+            }
+        });
+        diy = (Button)findViewById(R.id.diy);
+        diy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this,YoutubeActivity.class);
+                startActivity(intent);
             }
         });
     }

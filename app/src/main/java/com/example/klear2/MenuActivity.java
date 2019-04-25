@@ -11,6 +11,7 @@ public class MenuActivity extends AppCompatActivity {
     Button camera;
     Button diy;
     Button donate;
+    Button pickup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +43,14 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MenuActivity.this,DonateActivity.class);
+                startActivity(intent);
+            }
+        });
+        pickup = (Button)findViewById(R.id.pickup);
+        pickup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this,PickupActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,3 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">klear2</string>
+    <string-array name="waste_array">
+            <item>-Select-</item>
+            <item>Metal</item>
+            <item>Rubber</item>
+            <item>Plastic</item>
+            <item>Cardboard</item>
+            <item>Trash</item>
+            <item>Glass</item>
+            <item>Paper</item>
+    </string-array>
 </resources>

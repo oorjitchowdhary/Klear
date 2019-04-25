@@ -6,14 +6,14 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class DonateActivity extends AppCompatActivity {
-    private WebView form;
+    private WebView webView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donate);
 
-        form = (WebView)findViewById(R.id.webview);
-        form.setWebViewClient(new WebViewClient());
-        form.loadUrl("https://forms.gle/QKbsZFjq9xPqcid79");
+        webView = (WebView)findViewById(R.id.webview);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSeMi6jaDEGQhE0_UIuP_2aDUQIJ5GRBQRWYvnK8FMkqZzUgiQ/viewform");
     }
 }

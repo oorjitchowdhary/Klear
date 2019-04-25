@@ -15,6 +15,6 @@ public class YoutubeActivity extends AppCompatActivity {
 
         webView = (WebView)findViewById(R.id.webview);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.youtube.com/results?search_query=best+out+of+waste");
+        webView.loadUrl("https://www.partyone.in/blog/Making-Crafts-With-Waste---Best-Out-Of-Waste/98");
     }
 }

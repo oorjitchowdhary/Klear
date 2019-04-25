@@ -6,15 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@drawable/mainbg">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
         android:fontFamily="sans-serif"
         android:text="Klear"
         android:textColor="#fff"
@@ -55,6 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="107dp" />
+</RelativeLayout>
 
 
 </RelativeLayout>

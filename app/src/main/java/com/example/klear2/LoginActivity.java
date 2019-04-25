@@ -34,19 +34,19 @@ public class LoginActivity extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                validate(Name.getText(). toString(), Password.getText().toString());
+                validate(Name.getText().toString(), Password.getText().toString());
             }
         });
     }
 
     private void validate (String userName, String userPassword){
-        if((userName == "Admin") && (userPassword == "1234")){
+        if(userName.equals("Admin") && userPassword.equals("1234")){
             Intent intent = new Intent (LoginActivity.this,MenuActivity.class);
             startActivity(intent);
         }else{
             counter--;
 
-            tvInfo.setText("No. of attempts remaining:" + String.valueOf(counter));
+            tvInfo.setText("No. of attempts remaining: " + String.valueOf(counter));
 
             if(counter ==0){
                 Login.setEnabled(false);

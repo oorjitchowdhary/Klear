@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MenuActivity extends AppCompatActivity {
     Button camera;
     Button diy;
+    Button donate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,14 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MenuActivity.this,YoutubeActivity.class);
+                startActivity(intent);
+            }
+        });
+        donate = (Button)findViewById(R.id.donate);
+        donate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MenuActivity.this,DonateActivity.class);
                 startActivity(intent);
             }
         });

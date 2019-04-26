@@ -1,22 +1,33 @@
 package com.example.klear2;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 public class PickupActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
     double cost = 0;
     String already ="";
+    Button btProceed;
     int etSum;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pickup);
+        btProceed = (Button)findViewById(R.id.btProceed);
+        btProceed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PickupActivity.this,ProceedActivity.class);
+                startActivity(intent);
+            }
+        });
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
 

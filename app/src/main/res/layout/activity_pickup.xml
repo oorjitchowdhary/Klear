@@ -40,4 +40,14 @@
         android:text="price"
         android:textSize="28sp" />
 
+    <Button
+        android:id="@+id/btProceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:textColor="@color/colorAccent"
+        android:textSize="26sp"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"/>
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.klear2;
 
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
@@ -42,8 +43,8 @@ public class MenuActivity extends AppCompatActivity {
         donate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MenuActivity.this,DonateActivity.class);
-                startActivity(intent);
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSeMi6jaDEGQhE0_UIuP_2aDUQIJ5GRBQRWYvnK8FMkqZzUgiQ/viewform?usp=sf_link"));
+                startActivity(browserIntent);
             }
         });
         pickup = (Button)findViewById(R.id.pickup);

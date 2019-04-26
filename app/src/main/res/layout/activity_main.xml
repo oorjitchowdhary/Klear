@@ -5,24 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/mainbg">
+    android:background="#f68c16">
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="220dp"
+        android:layout_height="229dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
-        android:fontFamily="sans-serif"
-        android:text="Klear"
-        android:textColor="#fff"
-        android:textSize="40sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.556"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="206dp" />
+        android:layout_marginTop="70dp"
+        android:src="@drawable/main_logo_klear" />
+
 
     <Button
         android:id="@+id/button"
@@ -42,19 +37,7 @@
         android:layout_marginBottom="90dp"
         tools:ignore="OnClick" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:text="K"
-        android:textColor="#3F51B5"
-        android:textStyle="bold"
-        android:textSize="100sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="107dp" />
+
 </RelativeLayout>
 
 

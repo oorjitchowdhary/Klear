@@ -57,58 +57,58 @@ public class PickupActivity extends AppCompatActivity implements AdapterView.OnI
                 if(!already.contains("1")){
                     if(cost==0){
                         etName.setText("Metal");
-                        etPrice.setText("2.4");
+                        etPrice.setText("₹33/kg");
                         already+="1";
                     }else{
                         etName.setText(medicinesalready + "\nMetal");
-                        etPrice.setText(costalready + "\n2.4");
+                        etPrice.setText(costalready + "\n₹33/kg");
                     }
-                    cost += 2.4;
+                    cost += 33;
                 }
             }else if(selected.equals("Paper")){
 
                 if(!(already.contains("2"))){if(cost==0){
                     etName.setText("Paper");
-                    etPrice.setText("4.4");
+                    etPrice.setText("₹11/kg");
                     already+="2";
                 }else{
                     etName.setText(medicinesalready + "\nPaper");
-                    etPrice.setText(costalready + "\n4.4");
+                    etPrice.setText(costalready + "\n₹11/kg");
                 }}
-                cost += 4.4;
+                cost += 11;
             }else if(selected.equals("Glass")){
                 if(!(already.contains("3"))){
                     if(cost==0){
                         etName.setText("Glass");
-                        etPrice.setText("0.6");
+                        etPrice.setText("₹7/kg");
                         already+="3";
                     }else{
                         etName.setText(medicinesalready + "\nGlass");
-                        etPrice.setText(costalready + "\n0.6");
+                        etPrice.setText(costalready + "\n₹7/kg");
                     }}
-                cost += 0.6;
+                cost += 7;
             }else if(selected.equals("Plastic")){
                 if(!(already.contains("4"))){
                     if(cost==0){
                         etName.setText("Plastic");
-                        etPrice.setText("1");
+                        etPrice.setText("₹28/kg");
                         already+="4";
                     }else{
                         etName.setText(medicinesalready + "\nPlastic");
-                        etPrice.setText(costalready + "\n1");
+                        etPrice.setText(costalready + "\n₹28/kg");
                     }}
-                cost += 1;
+                cost += 28;
             }else if(selected.equals("Rubber")){
                 if(!(already.contains("5"))){
                     if(cost==0){
                         etName.setText("Rubber");
-                        etPrice.setText("4.5");
+                        etPrice.setText("₹6.5/kg");
                         already+="5";
                     }else {
                         etName.setText(medicinesalready + "\nRubber");
-                        etPrice.setText(costalready + "\n4.5");
+                        etPrice.setText(costalready + "\n₹6.5/kg");
                     }}
-                cost += 4.5;
+                cost += 6.5;
             }
         }
     }

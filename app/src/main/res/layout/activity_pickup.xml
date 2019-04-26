@@ -27,7 +27,7 @@
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="name"
+        android:text="Waste"
         android:textSize="28sp"
         android:gravity="center_horizontal"
         android:layout_marginTop="210dp"/>
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="360dp"
         android:gravity="center_horizontal"
-        android:text="price"
+        android:text="Price/kg"
         android:textSize="28sp" />
 
     <Button

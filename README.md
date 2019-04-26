@@ -1,4 +1,5 @@
-<img src="images/klear.png">
+<img src="klear-app-new/app/src/main/res/drawable/klear_menu.png
+">
 
 # Klear.
 Enabling waste management on your palm.

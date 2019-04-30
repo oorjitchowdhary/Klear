@@ -95,9 +95,9 @@ public class ProceedActivity extends FragmentActivity implements OnMapReadyCallb
     @Override
     public void onMapReady(GoogleMap googleMap) {
         map = googleMap;
-        LatLng Ajanta = new LatLng(28.451055, 77.04865);
-        map.addMarker(new MarkerOptions().position(Ajanta).title("Ajanta Public School"));
-        map.moveCamera(CameraUpdateFactory.newLatLng(Ajanta));
+        LatLng iON = new LatLng(28.585393, 77.062124);
+        map.addMarker(new MarkerOptions().position(iON).title("Indraprastha International School Dwarka"));
+        map.moveCamera(CameraUpdateFactory.newLatLng(iON));
 
 
     }

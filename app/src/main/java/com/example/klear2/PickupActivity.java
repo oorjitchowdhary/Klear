@@ -109,6 +109,28 @@ public class PickupActivity extends AppCompatActivity implements AdapterView.OnI
                         etPrice.setText(costalready + "\n₹6.5/kg");
                     }}
                 cost += 6.5;
+            }else if(selected.equals("Cardboard")){
+                if(!(already.contains("6"))){
+                    if(cost==0){
+                        etName.setText("Cardboard");
+                        etPrice.setText("₹15/kg");
+                        already+="6";
+                    }else {
+                        etName.setText(medicinesalready + "\nCardboard");
+                        etPrice.setText(costalready + "\n₹15/kg");
+                    }}
+                cost += 15;
+            }else if(selected.equals("Trash")){
+                if(!(already.contains("7"))){
+                    if(cost==0){
+                        etName.setText("Trash");
+                        etPrice.setText("₹17.5/kg");
+                        already+="7";
+                    }else {
+                        etName.setText(medicinesalready + "\nTrash");
+                        etPrice.setText(costalready + "\n₹17.5/kg");
+                    }}
+                cost += 17.5;
             }
         }
     }

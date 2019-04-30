@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity {
-    Button camera;
+    Button classify;
     Button diy;
     Button donate;
     Button pickup;
@@ -17,18 +17,12 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        camera = (Button)findViewById(R.id.classify);
-        camera.setOnClickListener(new View.OnClickListener() {
+        classify = (Button)findViewById(R.id.classify);
+        classify.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                try {
-                    Intent intent = new Intent();
-                    intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
-                    startActivity(intent);
-                }
-                catch (Exception e) {
-                    e.printStackTrace();
-                }
+            public void onClick(View v) {
+                Intent i = getPackageManager().getLaunchIntentForPackage("com.example.android.tflitecamerademo");
+                startActivity(i);
             }
         });
         diy = (Button)findViewById(R.id.diy);
